@@ -60,9 +60,44 @@ class Aventura {
       fill(0);
       text("Estado:" + this.estado, width/2, height/3);
       this.boton.dibujar();
-    } 
-  }
-  
+    } else if (this.estado == 8) {
+      this.time++;
+      image(Fondo[7],0,0);
+      fill(0);
+      text("Estado:" + this.estado, width/2, height/3);
+      this.boton.dibujar();
+  }  else if (this.estado == 9) {
+      this.time++;
+      image(Fondo[7],0,0);
+      fill(0);
+      text("Estado:" + this.estado, width/2, height/3);
+      this.boton.dibujar();
+  } else if (this.estado == 10) {
+      this.time++;
+      image(Fondo[7],0,0);
+      fill(0);
+      text("Estado:" + this.estado, width/2, height/3);
+      this.boton.dibujar();
+  } else if (this.estado == 11) {
+      this.time++;
+      image(Fondo[7],0,0);
+      fill(0);
+      text("Estado:" + this.estado, width/2, height/3);
+      this.boton.dibujar();
+  } else if (this.estado == 12) {
+      this.time++;
+      image(Fondo[7],0,0);
+      fill(0);
+      text("Estado:" + this.estado, width/2, height/3);
+      this.boton.dibujar();
+  } else if (this.estado == 13) {
+      this.time++;
+      image(Fondo[7],0,0);
+      fill(0);
+      text("Estado:" + this.estado, width/2, height/3);
+      this.boton.dibujar();
+  } 
+}
   botonSiguiente(desde, hasta){
     if (this.boton.press() && this.estado == desde && this.time > 2 ){
       this.estado = hasta;

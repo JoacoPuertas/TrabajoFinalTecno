@@ -26,6 +26,11 @@ function mousePressed(){
   General.botonSiguiente(4,5);
   General.botonSiguiente(5,6);  
   General.botonSiguiente(6,7);
-  General.botonSiguiente(7,0);
-  General.botonSiguiente2(0,1);
+  General.botonSiguiente(7,8);
+  General.botonSiguiente(8,9);
+  General.botonSiguiente(9,10);
+  General.botonSiguiente(10,11);
+  General.botonSiguiente(11,12);
+  General.botonSiguiente(12,13);
+  General.botonSiguiente(13,0);
 }
