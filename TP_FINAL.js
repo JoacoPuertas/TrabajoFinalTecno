@@ -20,6 +20,8 @@ function draw() {
 
 function mousePressed(){
   General.botonSiguiente(0,1);
+  General.botonSiguiente2(0,1);
+  General.botonSiguienteRect(0.1);
   General.botonSiguiente(1,2);
   General.botonSiguiente(2,3);
   General.botonSiguiente(3,4);

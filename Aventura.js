@@ -2,6 +2,7 @@ class Aventura {
   constructor(){
     this.boton = new Boton(width/4 * 3, height/2 , 50);
     this.boton2 = new Boton(width / 4 , height/2  , 50);
+    this.botonRect = new BotonRectangular(width/2, height/2, 50,50);
     this.estado = 0;
     this.time = 0;
   }
@@ -18,6 +19,7 @@ class Aventura {
       text("Estado:" + this.estado, width/2, height/3);
       this.boton.dibujar();
       this.boton2.dibujar();
+      this.botonRect.dibujar();
     } else if (this.estado == 1) {
       this.time++;
       image(Fondo[1],0,0);
@@ -112,10 +114,10 @@ class Aventura {
     }
   }
   
-  //botonSiguiente2(desde, hasta) {
-  //  if (this.boton.press() < this.t  && this.estado == desde && this.time > 2){
-  //    this.estado = hasta;
-  //    this.time = 0;
-  //  }
-  //}
+  botonSiguienteRect(desde, hasta){
+    if (this.botonRect.press() && this.estado == desde && this.time > 2 ){
+      this.estado = hasta;
+      this.time = 0;
+    }
+  }
 }
