@@ -1,6 +1,7 @@
 let General;
 let Fondo = [];
 
+// ignora esto es para probar como funciona git desktop jajajs
 
 function setup() {
   createCanvas(600,600);
