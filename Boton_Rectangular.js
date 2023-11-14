@@ -7,7 +7,8 @@ class BotonRectangular {
   }
   
   dibujar(){
-    fill(255,0,0);
+    stroke(2);
+    noFill();
     rect(this.posX,this.posY, this.tamX, this.tamY);
   }
   
