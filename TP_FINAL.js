@@ -1,17 +1,14 @@
 let General;
 let Fondo = [];
 
-// ignora esto es para probar como funciona git desktop jajajs
-
 function setup() {
-  createCanvas(600,600);
+  createCanvas(600, 600);
   General = new Aventura();
-  
 }
 
 function preload() {
-  for(let i = 0; i < 15; i++){
-    Fondo[i] = loadImage("data/libro" + i + ".png");
+  for (let i = 0; i < 13; i++) {
+    Fondo[i] = loadImage("data/p" + i + ".jpg");
   }
 }
 
@@ -19,21 +16,22 @@ function draw() {
   General.estados(Fondo);
 }
 
-function mousePressed(){
-  General.botonSiguiente(0,1);
-  General.botonSiguiente2(0,1);
-  General.botonSiguienteRect(0,1);
-  General.botonSiguiente(1,2);
-  General.botonSiguiente(2,3);
-  General.botonSiguiente(3,4);
-  General.botonSiguiente(4,5);
-  General.botonSiguiente(5,6);  
-  General.botonSiguiente(6,7);
-  General.botonSiguiente(7,8);
-  General.botonSiguiente(8,9);
-  General.botonSiguiente(9,10);
-  General.botonSiguiente(10,11);
-  General.botonSiguiente(11,12);
-  General.botonSiguiente(12,13);
-  General.botonSiguiente(13,0);
+function mousePressed() {
+  General.botonSiguienteRect(0, 1);
+  General.botonSiguienteRect(1, 2);
+  General.botonSiguiente(2, 3);
+  General.botonSiguiente2(2, 4);
+  General.botonSiguienteRect(3, 5);
+  General.botonSiguienteRect(4, 5);
+  General.botonSiguiente(5, 6);
+  General.botonSiguiente2(5, 7);
+  General.botonSiguienteRect(5, 8);
+  General.botonSiguiente(6, 0); //final 1
+  General.botonSiguiente(7, 9);
+  General.botonSiguiente(8, 10);
+  General.botonSiguiente(9, 11);
+  General.botonSiguiente2(9, 12);
+  General.botonSiguiente(10, 12);
+  General.botonSiguiente(11, 0); //final 2
+  General.botonSiguiente(12, 0); //final 3
 }
